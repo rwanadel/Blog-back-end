@@ -21,7 +21,12 @@ router.post(
   createPost
 );
 router.get("/:id", getuserPosts);
-router.patch("/:title", upDatepost);
-router.delete("/:title", deletePost);
+router.patch(
+  "/:id",
+  uploadImages([{ name: "images", count: 3 }]),
+  handleImages("images"),
+  upDatepost
+);
+router.delete("/:id", deletePost);
 
 module.exports = router;

@@ -130,3 +130,7 @@
 2024-09-10 15:39:57 error: Error: jwt must be provided, Status Code: 500
 2024-09-10 15:56:27 error: Error: jwt must be provided, Status Code: 500
 2024-09-10 15:56:27 error: Error: jwt must be provided, Status Code: 500
+2024-09-11 15:47:40 error: Error: Unexpected field, Status Code: 500
+2024-09-11 20:51:12 error: Error: user is not defined, Status Code: 500
+2024-09-11 20:56:12 error: Error: User is not defined, Status Code: 500
+2024-09-11 20:57:42 error: Error: Cannot populate path `user` because it is not in your schema. Set the `strictPopulate` option to false to override., Status Code: 500

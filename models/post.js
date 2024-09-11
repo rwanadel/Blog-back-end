@@ -1,16 +1,19 @@
-const {model, Schema} =require("mongoose");
-const postSchema=new Schema({
-    title:String,
-    description:String,
-    userId:{
-        type:Schema.Types.ObjectId,
-        ref:"User"
+const { model, Schema } = require("mongoose");
+const postSchema = new Schema(
+  {
+    title: String,
+    description: String,
+    user: {
+      type: Schema.Types.ObjectId,
+      ref: "User",
     },
-    images:[String],
-},{
-    timestamps:true
-})
+    images: [String],
+  },
+  {
+    timestamps: true,
+  }
+);
 
-const Post=model("Post",postSchema);
+const Post = model("Post", postSchema);
 
-module.exports=Post;
+module.exports = Post;

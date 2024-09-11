@@ -212,3 +212,42 @@
 2024-09-10 17:44:59 info: Server is running on port 5000
 2024-09-11 01:43:44 info: Connected to MongoDB Server
 2024-09-11 01:43:44 info: Server is running on port 5000
+2024-09-11 13:04:48 info: Connected to MongoDB Server
+2024-09-11 13:04:48 info: Server is running on port 5000
+2024-09-11 15:44:32 info: Connected to MongoDB Server
+2024-09-11 15:44:32 info: Server is running on port 5000
+2024-09-11 15:45:21 info: Connected to MongoDB Server
+2024-09-11 15:45:21 info: Server is running on port 5000
+2024-09-11 15:47:40 error: Error: Unexpected field, Status Code: 500
+2024-09-11 15:48:42 info: Connected to MongoDB Server
+2024-09-11 15:48:42 info: Server is running on port 5000
+2024-09-11 15:49:44 info: Post updated: 66e16a228eb2e163bd591528
+2024-09-11 20:49:29 info: Connected to MongoDB Server
+2024-09-11 20:49:29 info: Server is running on port 5000
+2024-09-11 20:50:06 info: Post created: 66e1d84e538cfa1f7f1b1512
+2024-09-11 20:51:00 info: Connected to MongoDB Server
+2024-09-11 20:51:00 info: Server is running on port 5000
+2024-09-11 20:51:12 error: Error: user is not defined, Status Code: 500
+2024-09-11 20:51:30 info: Connected to MongoDB Server
+2024-09-11 20:51:30 info: Server is running on port 5000
+2024-09-11 20:51:36 info: Post created: 66e1d8a8ae274186ade70529
+2024-09-11 20:56:02 info: Connected to MongoDB Server
+2024-09-11 20:56:02 info: Server is running on port 5000
+2024-09-11 20:56:12 error: Error: User is not defined, Status Code: 500
+2024-09-11 20:57:34 info: Connected to MongoDB Server
+2024-09-11 20:57:34 info: Server is running on port 5000
+2024-09-11 20:57:42 error: Error: Cannot populate path `user` because it is not in your schema. Set the `strictPopulate` option to false to override., Status Code: 500
+2024-09-11 20:59:32 info: Connected to MongoDB Server
+2024-09-11 20:59:32 info: Server is running on port 5000
+2024-09-11 20:59:41 info: Post created: 66e1da8c491590ca27e69086
+2024-09-11 21:05:14 info: Connected to MongoDB Server
+2024-09-11 21:05:14 info: Server is running on port 5000
+2024-09-11 21:05:24 info: Post created: 66e1dbe4b3c60f2aa1c99e7e
+2024-09-11 21:07:13 info: Post created: 66e1dc51b3c60f2aa1c99e86
+2024-09-11 21:11:15 info: Connected to MongoDB Server
+2024-09-11 21:11:15 info: Server is running on port 5000
+2024-09-11 21:11:28 info: Post created: 66e1dd4f06d10863330afdea
+2024-09-11 21:17:18 info: Connected to MongoDB Server
+2024-09-11 21:17:18 info: Server is running on port 5000
+2024-09-11 21:36:25 info: Connected to MongoDB Server
+2024-09-11 21:36:25 info: Server is running on port 5000
