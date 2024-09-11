@@ -37,16 +37,38 @@ exports.getuserPosts = async (req, res, next) => {
   }
 };
 ////////////////////////////////////////////////////////////////////
+// exports.createPost = async (req, res, next) => {
+//   try {
+//     const { title, description, images, userId } = req.user._id;
+//     const post = new Post({ title, description, images, userId });
+//     await post.save();
+//     res.send({ msg: "Post created", post });
+//   } catch (err) {
+//     logger.error(`Error creating post: ${err.message}`);
+//     next(err);
+//   }
+// };
+
 exports.createPost = async (req, res, next) => {
-  try {
-    const { title, description, images, userId } = req.user._id;
-    const post = new Post({ title, description, images, userId });
-    await post.save();
-    res.send({ msg: "Post created", post });
-  } catch (err) {
-    logger.error(`Error creating post: ${err.message}`);
-    next(err);
+  let image;
+  if (req.body.image) image = req.body.image[0];
+  const post = await postModel.create({
+    ...req.body,
+    user: req.user._id,
+    image,
+  });
+  if (!post) {
+    throw new AppError("Failed to create post", 500);
   }
+  logger.info(`Post created: ${post._id}`);
+  res.status(201).json(post);
+};
+
+const getPosts = async (req, res, next) => {
+  const posts = await postModel.find().populate("user");
+
+  res.status(200).send({ posts });
+  logger.info(`Fetched ${posts.length} posts`);
 };
 
 exports.upDatepost = async (req, res, next) => {
