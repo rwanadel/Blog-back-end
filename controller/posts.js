@@ -40,7 +40,7 @@ exports.getuserPosts = async (req, res, next) => {
 exports.createPost = async (req, res, next) => {
   try {
     const { title, description, images, userId } = req.user._id;
-    const post = new Post({ title, description, images });
+    const post = new Post({ title, description, images, userId });
     await post.save();
     res.send({ msg: "Post created", post });
   } catch (err) {
